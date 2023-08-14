@@ -1,12 +1,17 @@
 <?php
 
-$filas = 10;
-$columnas = 7;
+//alimentamos el generador de aleatorios
+mt_srand (time());
+//generamos un número aleatorio
+#$numero_aleatorio = mt_rand(0,5);
+
+$filas = mt_rand(1,20);
+$columnas = mt_rand(1,20);
 
 echo "<table border=1>";
-for ($i=0; $i < $filas; $i++) { 
+for ($i=1; $i <= $filas; $i++) { 
     echo "<tr>";
-    for ($j=0; $j < $columnas; $j++) { 
+    for ($j=1; $j <= $columnas; $j++) { 
         echo "<th> Fila $i - Columna $j </th>";
     }
     echo "</tr>";
