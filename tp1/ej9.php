@@ -1,7 +1,12 @@
 <?php
 
-$x = 6; #filas
-$y = 8; #columnas
+//alimentamos el generador de aleatorios
+mt_srand (time());
+//generamos un número aleatorio
+#$numero_aleatorio = mt_rand(1,20);
+
+$x = mt_rand(1,20); #filas
+$y = mt_rand(1,20); #columnas
 
 $i = 1;
 $j = 1;
