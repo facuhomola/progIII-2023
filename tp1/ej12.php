@@ -7,14 +7,18 @@ $paises = array("España" => "Madrid", "Francia" => "Paris", "Reino Unido" => "L
 #$i = 0;
 echo "<table border=2>";
 foreach ($continentes as $key => $value) {
-    echo "$key: ";
-    for ($i=0; $i < count($value); $i++) { 
+    echo "<tr>";
+    echo "<td rowspan=4> $key </td>";
+    for ($i=0; $i < count($value); $i++) {
+        echo "<tr>"; 
         foreach ($paises as $llave => $valor) {
             if (strcmp($llave, $value[$i]) == 0) {
-                echo " [$llave -> $valor]  ";
+                echo "<th> $llave </th> <th>$valor </th>";
             }
         }
+        echo "</tr>";
     }
+    echo "</tr>";
     echo "<br>";
 }
 echo "</table>";
