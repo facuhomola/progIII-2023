@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 4</title>
+</head>
+<body>
+    <h4>Ingrese los datos solicitados</h4>
+    <form action="guardar.php" method="post">
+        Nombre y Apellido <input type="text" name="nombre"> <br>
+        Dirección <input type="text" name="direccion">  <br>
+        Teléfono <input type="text" name="celu"> <br>
+        Sexo <select name="sexo" id="">
+            <option value="m">Masculino</option>
+            <option value="f">Femenino</option>
+        </select> <br>
+        Edad <input type="number" name="edad"><br>
+        Correo Electrónico <input type="mail" name="correo"> <br>
+        <input type="submit" name="" id="" value="Enviar">
+    </form>
+</body>
+</html>
