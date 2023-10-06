@@ -27,7 +27,7 @@ $conexion = mysqli_connect("localhost", "root", "", "personas");
 
             while($mostrar=mysqli_fetch_array($result)){
                 ?>
-                <option value=""> <?=  $mostrar['cod_postal'] ?> </option>
+                <option value="<?=  $mostrar['cod_postal'] ?>"> <?php  echo $mostrar['cod_postal'] . "-" . $mostrar['nombre']; ?> </option>
             <?php
             }
             ?>
