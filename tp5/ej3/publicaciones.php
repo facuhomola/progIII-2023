@@ -19,7 +19,7 @@ if (!isset($user)) {
     <title>Sistema - publicaciones</title>
 </head>
 <body>
-    <h1>Bienvenido</h1>
+    <h1>Sistema - Publicaciones</h1>
     <h2>Usuario: <?php echo $user ?> -- <a href="logout.php">Cerrar Sesión</a> </h2>
 </body>
 </html>
